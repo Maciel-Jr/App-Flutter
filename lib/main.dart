@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
-import 'my_page_app.dart';
+import 'package:route_plus/screens/login_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,8 +12,15 @@ class MyApp extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: MyPageApp()
+    return  MaterialApp(
+      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+          colorScheme: ColorScheme.fromSeed(seedColor: Color.fromARGB(1, 123, 0, 255)),
+          useMaterial3: true
+          ),
+
+      home: LoginScreen(),
 
     );
   }
