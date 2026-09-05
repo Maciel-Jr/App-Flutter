@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:route_plus/screens/login_screen.dart';
+import 'package:route_plus/screens/map_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget{
           useMaterial3: true
           ),
 
-      home: LoginScreen(),
+      home: MapScreen(),
 
     );
   }

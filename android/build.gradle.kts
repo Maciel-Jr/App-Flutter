@@ -1,3 +1,14 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        // Injeta o plugin no classpath para que subprojetos como o mapbox encontrem o método kotlin()
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:2.2.20")
+    }
+}
+
 allprojects {
     repositories {
         google()
